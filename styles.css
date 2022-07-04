@@ -1,0 +1,144 @@
+*{
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    box-sizing: border-box;
+    list-style: none;
+}
+
+html{
+    scroll-behavior: smooth;
+}
+
+body{
+    font-family: arial;
+}
+
+ul{
+    position: fixed;
+    top: 0;
+    left: 0;
+    margin-left: -240px;
+    width: 240px;
+    background: #1e1e1e;
+    height: 100vh;
+    overflow-y: auto;
+    transition: all .3s;
+}
+
+ul li{
+    height: 65px;
+    outline: none;
+}
+
+ul li a{
+    display: block;
+    height: 100%;
+    width: 100%;
+    line-height: 70px;
+    font-size: 20px;
+    color: white;
+    padding-left: 10%;
+    background: #1e1e1e;
+    border-top: 1px solid rgba(255,255,255,.1);
+    border-bottom: 1px solid black;
+    border-left: 5px solid transparent;
+}
+
+li .contact{ 
+    border-bottom: 1px solid rgb(25, 13, 13);
+}
+
+.active a{
+    color: #B93632;
+    border-left: 5px solid #B93632;
+    background: #1B1B1B;
+}
+
+section{
+    margin-left: 0px;
+    transition: all .3s;
+}
+
+i{
+    position: fixed;
+    margin: 20px 25px;
+    font-size: 40px;
+    color: orangered;
+    cursor: pointer;
+}
+
+.sec1{ 
+    margin-left: -20px;
+    background: url(./img/1.jpg);
+    background-size: cover;
+    height: 100vh;
+}
+
+.sec2{ 
+    margin-left: -20px;
+    background: url(./img/2.jpg);
+    background-size: cover;
+    height: 100vh;
+}
+
+.sec3{ 
+    margin-left: -20px;
+    background: url(./img/3.jpg);
+    background-size: cover;
+    height: 100vh;
+}
+
+.sec4{ 
+    margin-left: -20px;
+    background: url(./img/4.jpg);
+    background-size: cover;
+    height: 100vh;
+}
+
+.sec5{ 
+    margin-left: -20px;
+    background: url(./img/5.jpg);
+    background-size: cover;
+    height: 100vh;
+}
+
+.sec6{ 
+    margin-left: -20px;
+    background: url(./img/6.jpg);
+    background-size: cover;
+    height: 100vh;
+}
+
+
+.sec7{ 
+    margin-left: -20px;
+    background: url(./img/7.jpg);
+    background-size: cover;
+    height: 100vh;
+}
+
+h1{
+    font-size: 40px;
+    padding: 15px 20px;
+    margin: 0 0 0 45px;
+}
+
+p{
+    padding: 0 20px 10px 20px;
+    text-align: justify;
+}
+
+.ul_show{
+    margin-left: 0px;
+}
+
+.slide_image{
+    margin-left: 260px;
+}
+
+
+
+
+
+

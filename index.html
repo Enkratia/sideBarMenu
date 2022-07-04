@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Side Bar Menu</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="https://kit.fontawesome.com/15801db546.js" crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-3.6.0.js"></script>
+</head>
+<body>
+    <ul>
+        <li class="active"><a href="#">Home</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#portfolio">Portfolio</a></li>
+        <li><a href="#gallery">Gallery</a></li>
+        <li><a href="#services">Services</a></li>
+        <li><a href="#feedback">Feedback</a></li>
+        <li><a class="contact" href="#contact">Contact</a></li>
+        </ul>
+        <section>
+            <i class="fas fa-bars"></i>
+            <div class="sec1"></div>
+            <h1 id="about">About</h1>
+            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Eveniet facilis adipisci iste delectus atque officia veritatis est reiciendis suscipit magnam eaque consequatur provident deleniti molestiae veniam molestias id, nemo doloribus temporibus consectetur accusamus tempora cum. Saepe velit ad, fuga blanditiis dignissimos est voluptatibus, nobis neque accusamus distinctio porro aut necessitatibus corrupti mollitia architecto magnam deserunt placeat ut sunt maxime rerum doloremque! Perferendis inventore et ex laborum numquam veritatis quia repudiandae accusantium fugiat! Rem nisi recusandae unde eum ducimus molestiae obcaecati sed magni iste omnis error expedita accusantium odio corporis itaque fugit nesciunt rerum voluptas nam alias, inventore natus similique aspernatur.</p>
+            <div class="sec2"></div>
+            <h1 id="portfolio">Portfolio</h1>
+            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Eveniet facilis adipisci iste delectus atque officia veritatis est reiciendis suscipit magnam eaque consequatur provident deleniti molestiae veniam molestias id, nemo doloribus temporibus consectetur accusamus tempora cum. Saepe velit ad, fuga blanditiis dignissimos est voluptatibus, nobis neque accusamus distinctio porro aut necessitatibus corrupti mollitia architecto magnam deserunt placeat ut sunt maxime rerum doloremque! Perferendis inventore et ex laborum numquam veritatis quia repudiandae accusantium fugiat! Rem nisi recusandae unde eum ducimus molestiae obcaecati sed magni iste omnis error expedita accusantium odio corporis itaque fugit nesciunt rerum voluptas nam alias, inventore natus similique aspernatur.</p>
+            <div class="sec3"></div>
+            <h1 id="gallery">Gallery</h1>
+            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Eveniet facilis adipisci iste delectus atque officia veritatis est reiciendis suscipit magnam eaque consequatur provident deleniti molestiae veniam molestias id, nemo doloribus temporibus consectetur accusamus tempora cum. Saepe velit ad, fuga blanditiis dignissimos est voluptatibus, nobis neque accusamus distinctio porro aut necessitatibus corrupti mollitia architecto magnam deserunt placeat ut sunt maxime rerum doloremque! Perferendis inventore et ex laborum numquam veritatis quia repudiandae accusantium fugiat! Rem nisi recusandae unde eum ducimus molestiae obcaecati sed magni iste omnis error expedita accusantium odio corporis itaque fugit nesciunt rerum voluptas nam alias, inventore natus similique aspernatur.</p>
+            <div class="sec4"></div>
+            <h1 id="services">Services</h1>
+            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Eveniet facilis adipisci iste delectus atque officia veritatis est reiciendis suscipit magnam eaque consequatur provident deleniti molestiae veniam molestias id, nemo doloribus temporibus consectetur accusamus tempora cum. Saepe velit ad, fuga blanditiis dignissimos est voluptatibus, nobis neque accusamus distinctio porro aut necessitatibus corrupti mollitia architecto magnam deserunt placeat ut sunt maxime rerum doloremque! Perferendis inventore et ex laborum numquam veritatis quia repudiandae accusantium fugiat! Rem nisi recusandae unde eum ducimus molestiae obcaecati sed magni iste omnis error expedita accusantium odio corporis itaque fugit nesciunt rerum voluptas nam alias, inventore natus similique aspernatur.</p>
+            <div class="sec5"></div>
+            <h1 id="feedback">Feedback</h1>
+            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Eveniet facilis adipisci iste delectus atque officia veritatis est reiciendis suscipit magnam eaque consequatur provident deleniti molestiae veniam molestias id, nemo doloribus temporibus consectetur accusamus tempora cum. Saepe velit ad, fuga blanditiis dignissimos est voluptatibus, nobis neque accusamus distinctio porro aut necessitatibus corrupti mollitia architecto magnam deserunt placeat ut sunt maxime rerum doloremque! Perferendis inventore et ex laborum numquam veritatis quia repudiandae accusantium fugiat! Rem nisi recusandae unde eum ducimus molestiae obcaecati sed magni iste omnis error expedita accusantium odio corporis itaque fugit nesciunt rerum voluptas nam alias, inventore natus similique aspernatur.</p>
+            <div class="sec6"></div>
+            <h1 id="contact">Contact</h1>
+            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Eveniet facilis adipisci iste delectus atque officia veritatis est reiciendis suscipit magnam eaque consequatur provident deleniti molestiae veniam molestias id, nemo doloribus temporibus consectetur accusamus tempora cum. Saepe velit ad, fuga blanditiis dignissimos est voluptatibus, nobis neque accusamus distinctio porro aut necessitatibus corrupti mollitia architecto magnam deserunt placeat ut sunt maxime rerum doloremque! Perferendis inventore et ex laborum numquam veritatis quia repudiandae accusantium fugiat! Rem nisi recusandae unde eum ducimus molestiae obcaecati sed magni iste omnis error expedita accusantium odio corporis itaque fugit nesciunt rerum voluptas nam alias, inventore natus similique aspernatur.</p>
+            <div class="sec7"></div>
+        </section>
+        <script>
+            $(document).ready(function(){
+                $("i").click(function(){
+                    $("ul").toggleClass("ul_show");
+                    $("section").toggleClass("slide_image");
+                });
+                $("li").click(function(){
+                    $(this).addClass("active").siblings().removeClass("active");
+                });
+            });
+        </script> 
+</body>
+</html>
